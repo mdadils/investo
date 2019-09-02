@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { variables } from "../../../styles";
 
 const StyledForm = styled.form``;
 
@@ -7,22 +8,22 @@ const StyledModal = styled.div`
     display: block;
     position: fixed;
     z-index: 1;
-    padding-top: 100px;
+    padding-top: 5rem;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: ${variables.pitchBlack}; /** Fallback for old browsers**/
+    background-color: ${variables.pitchBlackTrans};
   }
   .modal-content {
     background-color: #fefefe;
     margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
+    padding: 1.8rem;
+    border: 1px solid ${variables.darkGrey};
     width: 70%;
-    border-radius: 8px;
+    border-radius: 0.6rem;
   }
 `;
 

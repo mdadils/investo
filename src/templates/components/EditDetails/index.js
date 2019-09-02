@@ -55,7 +55,7 @@ class EditDetails extends Component {
     return (
       <>
         <StyledModal className=" card modal">
-          <StyledForm className="edit-form modal-content">
+          <StyledForm className="edit-form modal-content shadow-lg">
             <div className="form-group">
               <label htmlFor="name">Name:</label>
               <input
@@ -120,14 +120,14 @@ class EditDetails extends Component {
             <button
               type="button"
               onClick={onCancel}
-              className="btn btn-secondary mx-1"
+              className="btn btn-secondary my-1"
             >
               Cancel
             </button>
             <button
               onClick={this.handleSubmitAndMergeData}
               type="submit"
-              className="btn btn-primary mx-1"
+              className="btn btn-primary mt-1"
             >
               Submit
             </button>
