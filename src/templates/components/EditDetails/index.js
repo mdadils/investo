@@ -116,21 +116,22 @@ class EditDetails extends Component {
                 onChange={this.handleInputChange}
               />
             </div>
-
-            <button
-              type="button"
-              onClick={onCancel}
-              className="btn btn-secondary my-1"
-            >
-              Cancel
-            </button>
-            <button
-              onClick={this.handleSubmitAndMergeData}
-              type="submit"
-              className="btn btn-primary mt-1"
-            >
-              Submit
-            </button>
+            <div className="form-group text-right">
+              <button
+                type="button"
+                onClick={onCancel}
+                className="btn link mx-1"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={this.handleSubmitAndMergeData}
+                type="submit"
+                className="btn btn-primary mx-1"
+              >
+                Submit
+              </button>
+            </div>
           </StyledForm>
         </StyledModal>
       </>

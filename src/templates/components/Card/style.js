@@ -2,18 +2,11 @@ import styled from "styled-components";
 import { variables } from "../../../styles";
 
 const StyledCard = styled.div`
-  max-width: 400px;
+  max-width: 20rem;
+  min-height: 19rem;
   font-family: "Montserrat", sans-serif;
   &:hover {
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
-  }
-  .edit-icon {
-    width: 24px;
-    height: auto;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
   }
   .name {
     font-family: "montserrat-semibold";
