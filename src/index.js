@@ -14,7 +14,7 @@ import Store from "./sdk/store";
 
 const ProvidedApp = () => (
   <Provider store={Store}>
-    <Router>
+    <Router basename="/investo">
       <Route path="/" exact component={HomePage} />
       <Route path="/connect-me-now" component={App} />
       {/* <Route path="/test" component={EditSection} /> */}
