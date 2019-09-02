@@ -8,7 +8,6 @@ import App from "./decoratedApp";
 import * as serviceWorker from "./serviceWorker";
 import "bootstrap/dist/css/bootstrap.css";
 import HomePage from "./templates/pages/Home";
-// import EditSection from "./templates/components/EditDetails";
 
 import Store from "./sdk/store";
 
@@ -17,7 +16,6 @@ const ProvidedApp = () => (
     <Router basename="/investo">
       <Route path="/" exact component={HomePage} />
       <Route path="/connect-me-now" component={App} />
-      {/* <Route path="/test" component={EditSection} /> */}
     </Router>
   </Provider>
 );

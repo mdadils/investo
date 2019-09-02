@@ -15,6 +15,8 @@
     "redux-thunk": "^2.3.0",
     "styled-components": "^4.3.2"
   },
+  "author": "Md Adil Shahrukh",
+  "email": "mdadilshahrukh@yahoo.in",
   "homepage": "https://shahrukh-mt.github.io/investo/",
   "scripts": {
     "predeploy": "npm run build",
