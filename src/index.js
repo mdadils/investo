@@ -8,19 +8,19 @@ import App from "./decoratedApp";
 import * as serviceWorker from "./serviceWorker";
 import "bootstrap/dist/css/bootstrap.css";
 import HomePage from "./templates/pages/Home";
-import EditSection from "./templates/components/EditDetails";
+// import EditSection from "./templates/components/EditDetails";
 
 import Store from "./sdk/store";
 
-const ProvidedApp = (
+const ProvidedApp = () => (
   <Provider store={Store}>
     <Router>
       <Route path="/" exact component={HomePage} />
       <Route path="/connect-me-now" component={App} />
-      <Route path="/test" component={EditSection} />
+      {/* <Route path="/test" component={EditSection} /> */}
     </Router>
   </Provider>
 );
-ReactDOM.render(ProvidedApp, document.getElementById("root"));
+ReactDOM.render(<ProvidedApp />, document.getElementById("root"));
 
 serviceWorker.unregister();
