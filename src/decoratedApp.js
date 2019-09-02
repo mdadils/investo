@@ -13,6 +13,9 @@ const mapDispatchToProps = dispatch => {
   return {
     fetchData: () => {
       Actions.fetchData(dispatch);
+    },
+    updateItem: item => {
+      Actions.updateItem(dispatch, item);
     }
   };
 };

@@ -6,7 +6,7 @@ class ContactsPage extends Component {
   componentDidMount() {
     setTimeout(() => {
       this.props.fetchData();
-    }, 3000);
+    }, 2000);
   }
 
   render() {
@@ -14,7 +14,10 @@ class ContactsPage extends Component {
       <div className="App">
         <Header data={this.props.contactList} />
         <div className="container">
-          <CardListContainer data={this.props.contactList} />
+          <CardListContainer
+            data={this.props.contactList}
+            submitHandler={this.props.updateItem}
+          />
         </div>
       </div>
     );

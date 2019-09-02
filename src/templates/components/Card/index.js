@@ -4,11 +4,20 @@ import { StyledCard } from "./style";
 import message from "./messages";
 import EditDetails from "../EditDetails";
 
-const Card = ({ name, email, phone, address, website, company }) => {
+const Card = props => {
+  const { name, email, phone, address, website, company } = props;
   const [isOpen, setIsOpen] = useState(false);
+
   const toggleIsOpen = () => {
+    document.body.style.overflow = !isOpen ? "hidden" : "scroll";
     setIsOpen(!isOpen);
   };
+
+  const handleEdit = newData => {
+    props.submitHandler && props.submitHandler(newData);
+    toggleIsOpen();
+  };
+
   return (
     <StyledCard className={`card shadow m-3`}>
       <div className="card-body">
@@ -62,7 +71,9 @@ const Card = ({ name, email, phone, address, website, company }) => {
           />
         </div>
       </div>
-      {isOpen ? <h1>Hello</h1> : null}
+      {isOpen ? (
+        <EditDetails {...props} onSubmit={handleEdit} onCancel={toggleIsOpen} />
+      ) : null}
     </StyledCard>
   );
 };

@@ -1,7 +1,7 @@
 const ActionTypes = {
   SAVE_DATA: "SAVE_DATA",
   FETCH_DATA: "FETCH_DATA",
-  TEST: "TEST"
+  HANDLE_EDIT: "HANDLE_EDIT"
 };
 
 export default ActionTypes;

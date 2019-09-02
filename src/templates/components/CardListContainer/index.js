@@ -7,13 +7,13 @@ const getLoader = () => {
   return <StyledLoader />;
 };
 
-const getCardList = data => {
+const getCardList = (data, submitHandler) => {
   return (
     <div className="row">
       {data.map(item => {
         return (
           <div key={item.id} className="col-sm-12 col-md-6 col-lg-4">
-            <Card {...item} />
+            <Card {...item} submitHandler={submitHandler} />
           </div>
         );
       })}
@@ -21,8 +21,8 @@ const getCardList = data => {
   );
 };
 
-const CardListContainer = ({ data }) => {
-  return data.length > 0 ? getCardList(data) : getLoader();
+const CardListContainer = ({ data, submitHandler }) => {
+  return data.length > 0 ? getCardList(data, submitHandler) : getLoader();
 };
 
 CardListContainer.defaultProps = {
