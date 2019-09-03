@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f62e6a385f9aa649b88faed88e316b9a",
+    "revision": "0cda4dc6a73dc44461ce16f1675bf877",
     "url": "/investo/index.html"
   },
   {
-    "revision": "28a49b615b7ac4e27f93",
+    "revision": "c96fefc6caa6257d645d",
     "url": "/investo/static/css/2.22a7d4ef.chunk.css"
   },
   {
-    "revision": "b87d8e6a8cf3c57b1fb3",
+    "revision": "4b0a2610b7af9966fa85",
     "url": "/investo/static/css/main.34de6062.chunk.css"
   },
   {
-    "revision": "28a49b615b7ac4e27f93",
-    "url": "/investo/static/js/2.4b496715.chunk.js"
+    "revision": "c96fefc6caa6257d645d",
+    "url": "/investo/static/js/2.d9dd2a96.chunk.js"
   },
   {
-    "revision": "b87d8e6a8cf3c57b1fb3",
-    "url": "/investo/static/js/main.a7619686.chunk.js"
+    "revision": "4b0a2610b7af9966fa85",
+    "url": "/investo/static/js/main.329d3455.chunk.js"
   },
   {
     "revision": "84d3e1ae2ecd743fca93",

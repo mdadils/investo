@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/investo/static/css/main.34de6062.chunk.css",
-    "main.js": "/investo/static/js/main.a7619686.chunk.js",
-    "main.js.map": "/investo/static/js/main.a7619686.chunk.js.map",
+    "main.js": "/investo/static/js/main.329d3455.chunk.js",
+    "main.js.map": "/investo/static/js/main.329d3455.chunk.js.map",
     "runtime~main.js": "/investo/static/js/runtime~main.aada3e19.js",
     "runtime~main.js.map": "/investo/static/js/runtime~main.aada3e19.js.map",
     "static/css/2.22a7d4ef.chunk.css": "/investo/static/css/2.22a7d4ef.chunk.css",
-    "static/js/2.4b496715.chunk.js": "/investo/static/js/2.4b496715.chunk.js",
-    "static/js/2.4b496715.chunk.js.map": "/investo/static/js/2.4b496715.chunk.js.map",
+    "static/js/2.d9dd2a96.chunk.js": "/investo/static/js/2.d9dd2a96.chunk.js",
+    "static/js/2.d9dd2a96.chunk.js.map": "/investo/static/js/2.d9dd2a96.chunk.js.map",
     "index.html": "/investo/index.html",
-    "precache-manifest.0d2c2aa363fa7a86572c401bca61ad76.js": "/investo/precache-manifest.0d2c2aa363fa7a86572c401bca61ad76.js",
+    "precache-manifest.f95e4f0a8baf947908941eee11668064.js": "/investo/precache-manifest.f95e4f0a8baf947908941eee11668064.js",
     "service-worker.js": "/investo/service-worker.js",
     "static/css/2.22a7d4ef.chunk.css.map": "/investo/static/css/2.22a7d4ef.chunk.css.map",
     "static/css/main.34de6062.chunk.css.map": "/investo/static/css/main.34de6062.chunk.css.map"
