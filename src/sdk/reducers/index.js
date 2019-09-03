@@ -5,6 +5,7 @@ export default function counter(state, action) {
     case ActionTypes.SAVE_DATA:
       const newState = { ...state, contactList: action.contactList };
       return newState;
+
     case ActionTypes.HANDLE_EDIT:
       const newData = state.contactList.map(item => {
         if (item.id === action.item.id) {
@@ -16,6 +17,7 @@ export default function counter(state, action) {
         ...state,
         contactList: newData
       };
+
     default:
       return state;
   }
