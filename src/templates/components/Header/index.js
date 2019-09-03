@@ -1,20 +1,13 @@
 import React from "react";
 import { StyledNav } from "./style";
+import { Link } from "react-router-dom";
 
 const Header = () => {
-  const navigateToHome = () => {
-    window.location.href = "/";
-  };
-
   return (
     <StyledNav className="navbar navbar-expand-md bg-dark navbar-dark">
-      <button
-        onClick={navigateToHome}
-        className="navbar-brand btn btn-link"
-        type="button"
-      >
+      <Link to="/" className="navbar-brand btn btn-link">
         investo
-      </button>
+      </Link>
       <button
         className="navbar-toggler"
         type="button"

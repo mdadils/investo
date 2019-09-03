@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 
 import "./index.css";
 import App from "./decoratedApp";
@@ -13,7 +13,7 @@ import Store from "./sdk/store";
 
 const ProvidedApp = () => (
   <Provider store={Store}>
-    <Router basename="/investo">
+    <Router basename="/">
       <Route path="/" exact component={HomePage} />
       <Route path="/connect-me-now" component={App} />
     </Router>
