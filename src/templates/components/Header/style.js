@@ -1,16 +1,17 @@
 import styled from "styled-components";
-import { variables } from "../../../styles";
 
 const StyledNav = styled.nav`
-  && {
+  &&&.bg-dark {
     background-color: #334a5e !important;
+  }
 
-    .navbar-brand {
-      font-family: "Pacifico", cursive;
-    }
-    .button.navbar-brand.btn.btn-link:hover {
-      color: #ed1a64;
-    }
+  .navbar-brand {
+    font-family: "Pacifico", cursive;
+  }
+
+  &&.navbar-dark .navbar-brand:hover,
+  .navbar-dark .navbar-brand:focus {
+    color: #ed1a64;
   }
 `;
 

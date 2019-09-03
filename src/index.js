@@ -5,7 +5,6 @@ import { HashRouter as Router, Route } from "react-router-dom";
 
 import "./index.css";
 import App from "./decoratedApp";
-import * as serviceWorker from "./serviceWorker";
 import "bootstrap/dist/css/bootstrap.css";
 import HomePage from "./templates/pages/Home";
 
@@ -20,5 +19,3 @@ const ProvidedApp = () => (
   </Provider>
 );
 ReactDOM.render(<ProvidedApp />, document.getElementById("root"));
-
-serviceWorker.unregister();
