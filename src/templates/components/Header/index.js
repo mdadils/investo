@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { StyledNav } from "./style";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsExpanded(!isExpanded);
+  };
+
   return (
     <StyledNav className="navbar navbar-expand-md bg-dark navbar-dark">
       <Link to="/" className="navbar-brand btn btn-link">
         investo
       </Link>
       <button
+        onClick={toggleNavbar}
         className="navbar-toggler"
         type="button"
         data-toggle="collapse"
@@ -16,7 +23,10 @@ const Header = () => {
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div className="collapse navbar-collapse" id="collapsibleNavbar">
+      <div
+        className={`navbar-collapse ${isExpanded ? "" : "collapse"}`}
+        id="collapsibleNavbar"
+      >
         <ul className="navbar-nav">
           <li className="nav-item">
             <button className="nav-link btn btn-link" type="button">
